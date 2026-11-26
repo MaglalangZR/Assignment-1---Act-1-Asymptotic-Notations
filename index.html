@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 1 - Act 1: Asymptotic Notations</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="main-wrapper">
+    <header>
+        <h1>Assignment 1 - Act 1: <strong>Asymptotic Notations</strong></h1>
+        <p>Demonstration of Big O (O), Big Omega (Ω), and Big Theta (Θ)</p>
+    </header>
+
+    <div class="card">
+        <h2>Part 1: Big O – Upper Bound O(n)</h2>
+        <div class="array-box">Array: [12, 25, 37, 41, 53, 68, 74, 89, 92, 105]</div>
+        
+        <div class="controls">
+            <input type="number" id="bigOInput" placeholder="Enter number (e.g., 105)">
+            <button class="btn-blue" onclick="runBigO()">Search Number</button>
+        </div>
+
+        <div class="result" id="bigOOutput">Click "Search Number" to see the result...</div>
+
+        <div class="guide-question">
+            <strong>Guide Question: What happens to the number of operations when the array size increases?</strong>
+            In the worst-case scenario (when the target number is at the very end or not in the array), the number of operations increases <strong>linearly</strong> in direct proportion to the array size (<em>n</em>). Doubling the array size doubles the maximum number of operations required.
+        </div>
+    </div>
+
+    <div class="card omega">
+        <h2>Part 2: Big Omega – Lower Bound Ω(1)</h2>
+        <div class="array-box">Array: [15, 22, 34, 48, 51, 63, 77, 80, 95, 110] | Target (First Element): 15</div>
+        
+        <div class="controls">
+            <button class="btn-green" onclick="runBigOmega()">Run Best-Case Search</button>
+        </div>
+
+        <div class="result" id="bigOmegaOutput">Click "Run Best-Case Search" to see the result...</div>
+
+        <div class="guide-question">
+            <strong>Guide Question: Why does the program perform fewer operations when the number is found immediately?</strong>
+            Because the loop starts checking from the first element (index 0). Once it finds a match on the very first comparison, the <code>break</code> statement immediately stops the loop. It skips checking the rest of the array, always taking just <strong>1 operation</strong> (Ω(1)) regardless of how large the array grows.
+        </div>
+    </div>
+
+    <div class="card theta">
+        <h2>Part 3: Big Theta – Tight Bound Θ(n)</h2>
+        <div class="array-box">Array: [5, 10, 15, 20, 25, 30, 35, 40, 45, 50]</div>
+        
+        <div class="controls">
+            <button class="btn-purple" onclick="runBigTheta()">Calculate Total Sum</button>
+        </div>
+
+        <div class="result" id="bigThetaOutput">Click "Calculate Total Sum" to see the result...</div>
+
+        <div class="guide-question">
+            <strong>Guide Question: What happens to the number of operations when you increase the array size?</strong>
+            The number of operations increases <strong>strictly linearly</strong> (Θ(n)) to match the exact size of the array. Unlike searching, calculating a sum cannot stop early—it must visit every single element from start to finish in both best and worst cases.
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

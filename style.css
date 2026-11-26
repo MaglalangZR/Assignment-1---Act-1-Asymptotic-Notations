@@ -1,0 +1,145 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 30px;
+    background-color: #081919; 
+    color: #f1f5f9;
+    line-height: 1.6;
+}
+
+.main-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    background: #223330; 
+    color: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid #4D524B;
+    border-bottom: 4px solid #CE1A1E;
+}
+
+header h1 {
+    margin: 0 0 8px 0;
+    font-size: 26px;
+    color: #CE1A1E;
+}
+
+header p {
+    margin: 0;
+    color: #837F78;
+    font-weight: 500;
+}
+
+.card {
+    background: #223330;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    border: 1px solid #4D524B;
+    border-left: 6px solid #CE1A1E;
+}
+
+.card.omega {
+    border-left-color: #837F78;
+}
+
+.card.theta {
+    border-left-color: #65060E;
+}
+
+h2 {
+    margin-top: 0;
+    color: #ffffff;
+}
+
+.array-box {
+    background: #081919;
+    border: 1px solid #4D524B;
+    color: #837F78;
+    padding: 10px 15px;
+    border-radius: 6px;
+    font-family: monospace;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.controls {
+    margin-bottom: 15px;
+}
+
+input {
+    padding: 9px 12px;
+    font-size: 15px;
+    background-color: #081919;
+    color: #ffffff;
+    border: 1px solid #4D524B;
+    border-radius: 5px;
+    width: 210px;
+    margin-right: 8px;
+}
+
+input::placeholder {
+    color: #837F78;
+}
+
+input:focus {
+    outline: none;
+    border-color: #CE1A1E;
+}
+
+button {
+    padding: 9px 16px;
+    font-size: 15px;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.2s ease;
+}
+
+.btn-blue, .btn-green, .btn-purple {
+    background-color: #CE1A1E; 
+}
+
+.btn-blue:hover, .btn-green:hover, .btn-purple:hover {
+    background-color: #65060E; 
+}
+
+.result {
+    padding: 12px;
+    background: #081919; 
+    border: 1px solid #4D524B; 
+    border-radius: 6px;
+    font-weight: bold;
+    min-height: 24px;
+    margin-bottom: 18px;
+    color: #837F78; 
+}
+
+.guide-question {
+    background: #65060E;
+    border: 1px solid #CE1A1E; 
+    color: #f8fafc;
+    padding: 15px;
+    border-radius: 6px;
+}
+
+.guide-question strong {
+    color: #ffffff;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.guide-question code {
+    background: #081919;
+    padding: 2px 5px;
+    border-radius: 3px;
+    color: #CE1A1E;
+}
